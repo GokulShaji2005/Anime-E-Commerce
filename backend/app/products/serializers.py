@@ -4,10 +4,10 @@ from .models import Product,ProductVariant
 
 class ProductVariantSerializer(serializers.ModelSerializer):
      class Meta:
-          model:ProductVariant
+          model=ProductVariant
           fields = [
             "id",
-            "variant_name"
+            "variant_name",
             "price",
             "stock",
         
